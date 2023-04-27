@@ -2,7 +2,7 @@
 ## General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker
 Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 
-![mainFig](https://github.com/MatthewJin001/GPA-HEC/blob/main/figure/gitPic.png](https://github.com/MatthewJin001/Single3D/blob/main/1git.png)
+![mainFig](https://github.com/MatthewJin001/Single3D/blob/main/1git.png)
 
 **_Figure_**: Visual representation of the hand-eye calibration of GPAs (a) GPAM (b) GPAS (c) GPAP.
 
