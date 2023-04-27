@@ -1,20 +1,8 @@
 
-# General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker
+## General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker
 Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 
-# Reference
-Jin, G., Yu, X., Chen, Y., Li, J. (2023), Simultaneous hand-eye and target parameter estimation by solving 2d-3d generative point alignment problem, submitted to IEEE Trans. Instrum. Meas.
-
-# Open Dataset
-A synced sequence of camera image and poses from end-effector can be downloaded from https://github.com/zarathustr/hand_eye_data.
-
-# Video
-https://youtu.be/vr78pEbBn2w
-
-
-## Overview
-
-![mainFig](https://github.com/MatthewJin001/GPA-HEC/blob/main/figure/gitPic.png)
+![mainFig](https://github.com/MatthewJin001/GPA-HEC/blob/main/figure/gitPic.png](https://github.com/MatthewJin001/Single3D/blob/main/1git.png)
 
 **_Figure_**: Visual representation of the hand-eye calibration of GPAs (a) GPAM (b) GPAS (c) GPAP.
 
@@ -94,14 +82,11 @@ Demo ``main`` contains the calibration and evaluation of multiple methods. run `
     {'GPAM'     }    0.048826    0.0004161    1.4275    1.3479
 ```
 
+## Reference
+Jin, G., Yu, X., Chen, Y., Li, J. (2023), General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker, submitted to IEEE Trans. Instrum. Meas.
+
 ## Open Dataset
-The self-made datasets, JAKA (Normal), Wrinkled and Small, along with the public datasets, DENSE and KUKA, are uploaded in the ``dataset`` folder.
-
-![mainFig](https://github.com/MatthewJin001/GPA-HEC/blob/main/figure/2.png)
-
-**_Figure_**: Image of the dataset (a) JAKA (Normal) (b) Wrinkled (c) Small.
-
+A synced sequence of camera image and poses from end-effector can be downloaded from https://github.com/zarathustr/hand_eye_data.
 
 ## Contact
-
 Gumin Jin, Department of Automation, Shanghai Jiao Tong University, Shanghai, jingumin@sjtu.edu.cn
