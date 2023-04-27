@@ -1,11 +1,18 @@
-# Single3D
-Codes for the paper “General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker”.
+
+# General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker
+Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
+
+# Reference
+Jin, G., Yu, X., Chen, Y., Li, J. (2023), Simultaneous hand-eye and target parameter estimation by solving 2d-3d generative point alignment problem, submitted to IEEE Trans. Instrum. Meas.
+
+# Open Dataset
+A synced sequence of camera image and poses from end-effector can be downloaded from https://github.com/zarathustr/hand_eye_data.
+
+# Video
+https://youtu.be/vr78pEbBn2w
 
 
 ## Overview
-Jin, G., Yu, X., Chen, Y., Li, J. (2023), Simultaneous hand-eye and target parameter estimation by solving 2d-3d generative point alignment problem, submitted to IEEE Trans. Instrum. Meas.
-
-Hand-eye calibration in this paper is further studied as a 2D-3D generative point alignment (GPA) problem. For multi-point, single-point and patterned calibration targets, GPAM, GPAS and GPAP are proposed to simultaneously estimate the hand-eye and the target parameters, and solved by a initialization-to-refinement structure. A general initialization method based on a single-point sequence is novelly proposed, which definetely gets rid of the dependence on pose. The perturbation-basd refinement is optimizaed using analytical Jacobians and point sparsity. 
 
 ![mainFig](https://github.com/MatthewJin001/GPA-HEC/blob/main/figure/gitPic.png)
 
@@ -93,16 +100,6 @@ The self-made datasets, JAKA (Normal), Wrinkled and Small, along with the public
 ![mainFig](https://github.com/MatthewJin001/GPA-HEC/blob/main/figure/2.png)
 
 **_Figure_**: Image of the dataset (a) JAKA (Normal) (b) Wrinkled (c) Small.
-
-## Video
-Video record for the hand-eye calibration dataset is on https://www.youtube.com/watch?v=udUMbf67ntw
-![mainFig](https://github.com/MatthewJin001/GPA-HEC/blob/main/figure/exp.jpg)
-**_Figure_**: Experimental configuration.
-## Reference
-* Sarabandi S, Porta J M, Thomas F. Hand-eye calibration made easy through a closed-form two-stage method[J]. IEEE Robotics and Automation Letters, 2022, 7(2): 3679-3686, https://github.com/MatthewJin001/Hand-Eye-Calibration
-* Wu J, Sun Y, Wang M, et al. Hand-eye calibration: 4-D procrustes analysis approach[J]. IEEE Transactions on Instrumentation and Measurement, 2019, 69(6): 2966-2981, https://github.com/MatthewJin001/hand_eye_SO4
-* Tabb A, Ahmad Yousef K M. Solving the robot-world hand-eye (s) calibration problem with iterative methods[J]. Machine Vision and Applications, 2017, 28(5-6): 569-590, https://github.com/MatthewJin001/RWHEC-Tabb-AhmadYousef
-* Ali I, Suominen O, Gotchev A, et al. Methods for simultaneous robot-world-hand–eye calibration: A comparative study[J]. Sensors, 2019, 19(12): 2837, https://github.com/MatthewJin001/RWHE-Calib
 
 
 ## Contact
