@@ -2,7 +2,7 @@
 ## Hand-eye Parameter Estimation Based on 3D Observation of A Single Marker
 Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 
-![contents](./pic/visualRepresentation.pdf)
+![mainFig](https://github.com/MatthewJin001/Single3D/blob/main/pic/visualRepresentation.png)
 
 **_Figure_**: Visual representation of the hand-eye calibration of Single Marker. (a) The eye-in-hand case. (b) The eye-to-hand case.
 
