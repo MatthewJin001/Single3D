@@ -1,10 +1,10 @@
 
-## General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker
+## Hand-eye Parameter Estimation Based on 3D Observation of A Single Marker
 Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 
-![mainFig](https://github.com/MatthewJin001/Single3D/blob/main/1git.png)
+![mainFig](https://github.com/MatthewJin001/Single3D/blob/main/pic/visualRepresentation.pdf)
 
-**_Figure_**: Visual representation of the hand-eye calibration of GPAs (a) GPAM (b) GPAS (c) GPAP.
+**_Figure_**: Visual representation of the hand-eye calibration of Single Marker. (a) The eye-in-hand case. (b) The eye-to-hand case.
 
 
 ## How to use
