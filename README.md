@@ -86,7 +86,7 @@ Demo ``main`` contains the calibration and evaluation of multiple methods. run `
 Jin, G., Yu, X., Chen, Y., Li, J. (2023), General Hand-eye Parameter Estimation based on 3D Measurement of a Single-marker, submitted to IEEE Trans. Instrum. Meas.
 
 ## Open Dataset
-A synced sequence of camera image and poses from end-effector can be downloaded from https://github.com/zarathustr/hand_eye_data.
+A synced sequence of 3D camera observation and robot measurement can be downloaded from https://github.com/MatthewJin001/3Ddata.
 
 ## Contact
 Gumin Jin, Department of Automation, Shanghai Jiao Tong University, Shanghai, jingumin@sjtu.edu.cn
