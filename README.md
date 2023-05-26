@@ -12,24 +12,23 @@ Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 It works well on MATLAB R2023a. The GPAs themselves do not use any solvers, while comparison algorithms and evaluation need the solvers in Optimization Toolbox.
 
 ### Main Instructions
-To run the GPAM calibration, call
+To run the single-marker calibration, call
 ```
-[out] = Algo19_GPAM(bRie,btie,qij,pattern,patternX,patternY,K)
+[Rcf,tcf,pcf,Rit,tit,pit,rnticf,rntiit] = Alg(Ri,ti,ppi)
 ```
 where
-* ``bRie`` (3x3xn): the rotation matrix of robot pose from effector to base,
-* ``btie`` (3xn): the translation vector of robot pose  from effector to base (unit: m),
-* ``qij`` (2xnxm): the 2D pixel,
-* ``pattern`` (3xm): the point position on the pattern, only used by GPAP,
-* ``patternX`` (1x1): the pattern row, used to determine the center point for initialization,
-* ``patternY`` (1x1): the pattern cloumn, used to determine the center point for initialization,
-* ``K`` (3x3): the camera intrinsics,
-* ``out``: the output structure, specifically includes the following
-* ``eRc`` (3x3): the rotation matrix of hand-eye pose from camera to effector,
-* ``etc`` (3x1): the translation vector of hand-eye pose from camera to effecotor (unit: m),
-* ``p`` (3mx1): the feature point positons in the base frame, 
-* ``rnti1`` (1x1):  the data preparation runtime (unit: seconds),
-* ``rnti2`` (1×1)： the total runtime (unit: seconds).
+* ``Ri`` (3x3xn): the rotation matrix of robot pose ,
+* ``ti`` (3xn): the translation vector of robot pose ,
+* ``ppi`` (3xnxm): the 3D observation of a marker,
+* ``Rcf`` (3x3): the rotation matrix of hand-eye parameter of closed-form solution ,
+* ``tcf`` (3x1): the translation vector of hand-eye parameter of closed-form solution (unit: mm),
+* ``pcf`` (3mx1): the marker positon of closed-form solution, 
+* ``rnticf`` (1x1):  the runtime of closed-form solution (unit: seconds),
+* ``Rit`` (3x3): the rotation matrix of hand-eye parameter of iterative solution,
+* ``tit`` (3x1): the translation vector of hand-eye parameter of iterative solution (unit: mm),
+* ``pit`` (3mx1): the marker positon of iterative solution, 
+* ``rnticf`` (1x1):  the runtime of closed-form solution of iterative solution (unit: seconds),
+
 
 ### Demos
 Demo ``main`` contains the calibration and evaluation of multiple methods. run ``main.m``, the results will be stored in ``result.xlsx``. The calibration and the evaluation results of the normal dataset in the paper are as follows
