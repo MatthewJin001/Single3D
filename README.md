@@ -31,7 +31,7 @@ where
 * ``Rit`` (3x3): the rotation matrix of the hand-eye parameter of iterative solution,
 * ``tit`` (3x1): the translation vector of the hand-eye parameter of iterative solution (unit: mm),
 * ``pit`` (3mx1): the marker position of iterative solution (unit: mm), 
-* ``rnticf`` (1x1):  the runtime of closed-form solution of iterative solution (unit: seconds),
+* ``rnticf`` (1x1):  the runtime of closed-form solution of iterative solution (unit: seconds).
 
 
 ### Demos
