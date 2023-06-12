@@ -2,6 +2,9 @@
 ## Hand-eye Parameter Estimation Based on 3D Observation of A Single Marker
 Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 
+## Overview
+The classic method for hand-eye calibration (HEC) is pose-based, since it calculates the hand-eye parameter after estimating the camera pose using multi-marker/pattern data. However, collecting data to cover all the pattern points at each moment is trivial and time-consuming, especially in the case of low frame rate cameras with a narrow field of view, and the error of camera pose would inevitably deteriorate the accuracy of the next hand-eye estimation. In this paper, we aim to address this problem by directly building the HEC model on point alignment using 3D observation from a single marker rather than homogeneous pose alignment. The proposed single-marker model is indeed nonlinear and general for both eye-to-base and eye-in-hand cases. To solve this nonlinear single-marker model, it is first equivalently transformed into a rotation-only minimization, and then both closed-form and iterative solutions could be obtained according to different schemes for handling the rotational nonlinearity. It is notable that these solutions are completely represented by pre-defined variables in compact formulations. Comprehensive experiments are provided to demonstrate the advantages of the proposed method over traditional pose-based methods, in terms of accuracy, computational efficiency, and operational efficiency. 
+
 ![mainFig](https://github.com/MatthewJin001/Single3D/blob/main/pic/visualRepresentation.png)
 
 **_Figure_**: Visual representation of the hand-eye calibration of Single Marker. (a) The eye-in-hand case. (b) The eye-to-hand case.
