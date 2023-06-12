@@ -5,7 +5,7 @@ Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 ## Overview
 For the classic method of hand-eye calibration, collecting data to cover all the pattern points at each moment is time-consuming, and the error of camera pose would inevitably deteriorate the accuracy of the hand-eye estimation. In this paper, we aim to address this problem by directly building the hand-eye model on point alignment using 3D observation from a single marker rather than homogeneous pose alignment. Comprehensive experiments demonstrate the advantages of the proposed method over traditional pose-based methods, in terms of accuracy, computational efficiency, and operational efficiency. 
 
-<img src="datasetPic/pic/visualRepresentation.png" width="75%">
+<img src="pic/visualRepresentation.png" width="75%">
 
 **_Figure_**: Visual representation of the hand-eye calibration of Single Marker. (a) The eye-in-hand case. (b) The eye-to-hand case.
 
