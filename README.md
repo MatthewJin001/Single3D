@@ -12,9 +12,9 @@ For the classic method of hand-eye calibration, collecting data to cover all the
 
 ## How to use
 ### Dependencies
-It works well on MATLAB R2023a. The GPAs themselves do not use any solvers, while comparison algorithms and evaluation need the solvers in Optimization Toolbox.
+MATLAB R2020a without any dependencies.
 
-### Main Instructions
+### Main Instruction
 To run the single-marker calibration, call
 ```
 [Rcf,tcf,pcf,Rit,tit,pit,rnticf,rntiit] = Alg(Ri,ti,ppi)
@@ -25,16 +25,16 @@ where
 * ``ppi`` (3xnxm): the 3D observation of a marker,
 * ``Rcf`` (3x3): the rotation matrix of hand-eye parameter of closed-form solution ,
 * ``tcf`` (3x1): the translation vector of hand-eye parameter of closed-form solution (unit: mm),
-* ``pcf`` (3mx1): the marker positon of closed-form solution, 
+* ``pcf`` (3mx1): the marker positon of closed-form solution (unit: mm), 
 * ``rnticf`` (1x1):  the runtime of closed-form solution (unit: seconds),
 * ``Rit`` (3x3): the rotation matrix of hand-eye parameter of iterative solution,
 * ``tit`` (3x1): the translation vector of hand-eye parameter of iterative solution (unit: mm),
-* ``pit`` (3mx1): the marker positon of iterative solution, 
+* ``pit`` (3mx1): the marker positon of iterative solution (unit: mm), 
 * ``rnticf`` (1x1):  the runtime of closed-form solution of iterative solution (unit: seconds),
 
 
 ### Demos
-Demo ``main`` contains the calibration and evaluation of multiple methods. run ``main.m``, the results will be stored in ``result.xlsx``. The calibration and the evaluation results of the normal dataset in the paper are as follows
+Demo ``mainSingle`` contains the calibration and evaluation of single-marker methods. run ``mainSingle.m``, and the results for eye-in-hand calibration are as follows
 ```
 easurement number:30
  
