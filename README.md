@@ -7,7 +7,7 @@ For the classic method of hand-eye calibration, collecting data to cover all the
 
 <img src="pic/visualRepresentation.png" width="75%">
 
-**_Figure_**: Visual representation of the hand-eye calibration of a single marker. (a) The eye-in-hand case. (b) The eye-to-hand case.
+**_Figure_**: Visual representation of the hand-eye calibration of a single marker. (a) The eye-to-base case. (b) The eye-in-hand case.
 
 
 ## How to use
@@ -20,9 +20,10 @@ To run the single-marker calibration, call
 [Rcf,tcf,pcf,Rit,tit,pit,rnticf,rntiit] = Alg(Ri,ti,ppi)
 ```
 where
-* ``Ri`` (3x3xn): the rotation matrix of robot pose,
+* ``Ri`` (3x3xn): the rotation matrix of robot pose (n is the measurement number),
 * ``ti`` (3xn): the translation vector of robot pose,
-* ``ppi`` (3xnxm): the 3D observation of a marker,
+* ``ppi`` (3xnxm): the 3D observation of a marker (m is the marker number),
+
 * ``Rcf`` (3x3): the rotation matrix of the hand-eye parameter of closed-form solution,
 * ``tcf`` (3x1): the translation vector of the hand-eye parameter of closed-form solution (unit: mm),
 * ``pcf`` (3mx1): the marker position of closed-form solution (unit: mm), 
