@@ -86,6 +86,8 @@ Jin, G., Yu, X., Chen, Y., Li, J. (2023), General Hand-eye Parameter Estimation 
 
 ## Open Dataset
 A synced sequence of 3D camera observation and robot measurement can be downloaded from https://github.com/MatthewJin001/3Ddata.
+<img src="pic/exp.jpg" width="75%">
+**_Figure_**: Experimental configuration for the eye-in-hand calibration of Single Marker.
 
 ## Contact
 Gumin Jin, Department of Automation, Shanghai Jiao Tong University, Shanghai, jingumin@sjtu.edu.cn
