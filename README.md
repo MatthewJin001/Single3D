@@ -3,11 +3,11 @@
 Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 
 ## Overview
-For the classic method of hand-eye calibration, collecting data to cover all the pattern points at each moment is time-consuming, and the error of camera pose would inevitably deteriorate the accuracy of the hand-eye estimation. In this paper, we aim to address this problem by directly building the hand-eye model on point alignment using 3D observation from a single marker rather than homogeneous pose alignment. Comprehensive experiments demonstrate the advantages of the proposed method over traditional pose-based methods, in terms of accuracy, computational efficiency, and operational efficiency. 
+For the classic method of hand-eye calibration, collecting data to cover all the pattern points at each moment is time-consuming, and the error of the camera pose would inevitably deteriorate the accuracy of the hand-eye estimation. In this paper, we aim to address this problem by directly building the hand-eye model on point alignment using 3D observation from a single marker rather than homogeneous pose alignment. Comprehensive experiments demonstrate the advantages of the proposed method over traditional pose-based methods in terms of accuracy, computational efficiency, and operational efficiency. 
 
 <img src="pic/visualRepresentation.png" width="75%">
 
-**_Figure_**: Visual representation of the hand-eye calibration of Single Marker. (a) The eye-in-hand case. (b) The eye-to-hand case.
+**_Figure_**: Visual representation of the hand-eye calibration of a single marker. (a) The eye-in-hand case. (b) The eye-to-hand case.
 
 
 ## How to use
@@ -20,23 +20,23 @@ To run the single-marker calibration, call
 [Rcf,tcf,pcf,Rit,tit,pit,rnticf,rntiit] = Alg(Ri,ti,ppi)
 ```
 where
-* ``Ri`` (3x3xn): the rotation matrix of robot pose ,
-* ``ti`` (3xn): the translation vector of robot pose ,
+* ``Ri`` (3x3xn): the rotation matrix of robot pose,
+* ``ti`` (3xn): the translation vector of robot pose,
 * ``ppi`` (3xnxm): the 3D observation of a marker,
-* ``Rcf`` (3x3): the rotation matrix of hand-eye parameter of closed-form solution ,
-* ``tcf`` (3x1): the translation vector of hand-eye parameter of closed-form solution (unit: mm),
-* ``pcf`` (3mx1): the marker positon of closed-form solution (unit: mm), 
+* ``Rcf`` (3x3): the rotation matrix of the hand-eye parameter of closed-form solution,
+* ``tcf`` (3x1): the translation vector of the hand-eye parameter of closed-form solution (unit: mm),
+* ``pcf`` (3mx1): the marker position of closed-form solution (unit: mm), 
 * ``rnticf`` (1x1):  the runtime of closed-form solution (unit: seconds),
-* ``Rit`` (3x3): the rotation matrix of hand-eye parameter of iterative solution,
-* ``tit`` (3x1): the translation vector of hand-eye parameter of iterative solution (unit: mm),
-* ``pit`` (3mx1): the marker positon of iterative solution (unit: mm), 
+* ``Rit`` (3x3): the rotation matrix of the hand-eye parameter of iterative solution,
+* ``tit`` (3x1): the translation vector of the hand-eye parameter of iterative solution (unit: mm),
+* ``pit`` (3mx1): the marker position of iterative solution (unit: mm), 
 * ``rnticf`` (1x1):  the runtime of closed-form solution of iterative solution (unit: seconds),
 
 
 ### Demos
 Demo ``mainSingle`` contains the calibration and evaluation of single-marker methods. run ``mainSingle.m``, and the results for eye-in-hand calibration are as follows
 ```
-easurement number:30
+Measurement number:30
  
 Calibration results of the closed-form solution:
 Euler angles(degree):-39.3942,-2.9623,-62.7325
@@ -89,7 +89,7 @@ A synced sequence of 3D camera observation and robot measurement can be download
 
 <img src="pic/exp.jpg" width="55%">
 
-**_Figure_**: Experimental configuration for the eye-in-hand calibration of Single Marker.
+**_Figure_**: Experimental configuration for the eye-in-hand calibration of a single marker.
 
 ## Contact
 Gumin Jin, Department of Automation, Shanghai Jiao Tong University, Shanghai, jingumin@sjtu.edu.cn
