@@ -1,8 +1,8 @@
 
-## Hand-eye Parameter Estimation Based on 3D Observation of A Single Marker (Under review)
+## Hand-eye Parameter Estimation Based on 3D Observation of A Single Marker 
 Authors: Gumin Jin, Xingkai Yu, Yuqing Chen, Jianxun Li
 
-Please allow us to handle a few deadlines first. Some codes corresponding to the revised manuscript are being organized and will be uploaded immediately.
+<!--Please allow us to handle a few deadlines first. Some codes corresponding to the revised manuscript are being organized and will be uploaded immediately. -->
 
 ## Overview
 For the classic method of hand-eye calibration, collecting data to cover all the pattern points at each moment is time-consuming, and the error of the camera pose would inevitably deteriorate the accuracy of the hand-eye estimation. In this paper, we aim to address this problem by directly building the hand-eye model on point alignment using 3D observation from a single marker rather than homogeneous pose alignment. Comprehensive experiments demonstrate the advantages of the proposed method over traditional pose-based methods in terms of accuracy, computational efficiency, and operational efficiency. 
